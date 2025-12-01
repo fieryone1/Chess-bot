@@ -33,7 +33,7 @@ def order_moves(legal):
     return sorted(legal, key= lambda pm: len(getattr(pm[1], "captures", []) or []), reverse=True)
 
 
-def agent(board, player, var):  
+def agentv0(board, player, var):  
 
     """"
     This is an example of your designed Agent
@@ -63,7 +63,7 @@ def agent(board, player, var):
 
     start_time = time.perf_counter()
     thinking_time = var[1]
-    deadline = start_time + thinking_time - 0.05
+    deadline = start_time + thinking_time - 0.25
     legal = list_legal_moves_for(board, player)
     legal = order_moves(legal)
     if not legal:

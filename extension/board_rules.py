@@ -3,7 +3,8 @@ from chessmaker.chess.pieces import King
 from chessmaker.chess.results import no_kings, checkmate
 
 THINKING_TIME_BUDGET = 14.0 # (secs)
-GAME_TIME_BUDGET = 300.0 # (secs)
+# GAME_TIME_BUDGET = 300.0 # (secs)
+GAME_TIME_BUDGET = 1000 # (secs)
 
 def _position_key(board):
     pieces = []

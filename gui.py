@@ -12,7 +12,7 @@ try:
     from extension.board_utils import print_board_ascii, copy_piece_move
     from extension.board_rules import get_result, thinking_with_timeout, THINKING_TIME_BUDGET, GAME_TIME_BUDGET
     from samples import white, black, sample0, sample1
-    from agent import agent
+    from agentv1 import agent
     from opponent import opponent
 except ImportError as e:
     print(f"Error importing game modules: {e}")

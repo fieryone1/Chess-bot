@@ -17,7 +17,7 @@ PIECE_VALUES = {
 CENTER = (2, 2)
 
 
-def agent(board, player, var):
+def agentexample(board, player, var):
     """
     Iterative-deepening alpha–beta agent with a simple heuristic eval.
     board: cloned board handed in by the runner
@@ -25,7 +25,7 @@ def agent(board, player, var):
     var: [ply_id, THINKING_TIME_BUDGET]
     """
     start = time.perf_counter()
-    deadline = start + max(var[1] - 0.15, 0.05)  # small buffer before timeout
+    deadline = start + max(var[1] - 0.9, 0.05)  # small buffer before timeout
 
     root_player = player
 
